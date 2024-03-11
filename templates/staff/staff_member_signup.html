@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main-content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Member Signup</title>
+</head>
+<body>
+
+    <form class="login-container" method="post">
+      <center>  <h2>Staff Member Signup</h2></center>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
+
+{% endblock main-content %}

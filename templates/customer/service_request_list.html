@@ -1,0 +1,16 @@
+<!-- service_request_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Request List</title>
+</head>
+<body>
+    <h2>Service Requests</h2>
+    <ul>
+        {% for service_request in service_requests %}
+            <li>{{ service_request.request_type }} - {{ service_request.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- support_tool.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Support Tool</title>
+</head>
+<body>
+    <h2>Support Tool</h2>
+    <ul>
+        {% for service_request in service_requests %}
+            <li>{{ service_request.request_type }} - {{ service_request.status }}</li>
+            <!-- Add other service request details and management options here -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
